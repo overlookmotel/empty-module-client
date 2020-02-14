@@ -3,13 +3,12 @@
  * Tests
  * ------------------*/
 
-'use strict';
-
 // Modules
-const {{nameCamel}} = require('../index');
+// eslint-disable-next-line import/no-unresolved, node/no-missing-import
+import {{nameCamel}} from '{{name}}';
 
 // Init
-require('./support');
+import './support/index.js';
 
 // Tests
 
