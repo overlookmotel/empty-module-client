@@ -3,6 +3,6 @@
  * Entry point
  * ------------------*/
 
-// Export
+// Exports
 
 export {};
