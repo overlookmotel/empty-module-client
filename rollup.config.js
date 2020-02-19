@@ -23,10 +23,15 @@ const globals = {react: 'React'};
 const formats = getFormats(['cjs', 'esm', 'umd']);
 
 // Create build configs
-module.exports = formats.flatMap(env => [
-	createConfig(env, 'production'),
-	createConfig(env, 'development')
-]);
+const configs = [];
+for (const format of formats) {
+	configs.push(
+		createConfig(format, 'production'),
+		createConfig(format, 'development')
+	);
+}
+
+module.exports = configs;
 
 function createConfig(format, env) {
 	const isProduction = env === 'production',
