@@ -5,4 +5,4 @@
 
 // Exports
 
-export {};
+export default function() {};
