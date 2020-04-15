@@ -11,6 +11,10 @@ module.exports = {
 	extends: [
 		'@overlookmotel/eslint-config-node'
 	],
+	rules: {
+		'import/no-unresolved': ['error', {ignore: ['^{{name}}$']}],
+		'node/no-missing-require': ['error', {allowModules: ['{{name}}']}]
+	},
 	overrides: [{
 		files: ['!.*'],
 		extends: [
