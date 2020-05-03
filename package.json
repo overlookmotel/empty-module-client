@@ -11,6 +11,10 @@
     },
     "./es": "./es/index.js"
   },
+  "files": [
+    "es/**/*.js",
+    "dist/**/*.js"
+  ],
   "sideEffects": false,
   "author": {
     "name": "Overlook Motel"
