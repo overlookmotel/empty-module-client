@@ -27,7 +27,7 @@
     "url": "https://github.com/overlookmotel/{{name}}/issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.9.6",
+    "@babel/runtime": "^7.10.2",
     "tiny-invariant": "^1.1.0"
   },
   "peerDependencies": {
